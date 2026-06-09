@@ -1,0 +1,5 @@
+#pragma once
+
+#ifndef AP_GPSPOOFDETECT_ENABLED
+#define AP_GPSPOOFDETECT_ENABLED 1
+#endif

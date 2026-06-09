@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-06-01T19:56:45.050370",
+  "num_scenarios": 6,
+  "detection_metrics": {
+    "total_scenarios": 6,
+    "true_positives": 2,
+    "false_negatives": 4,
+    "detection_rate": 0.3333333333333333,
+    "confirmed_detections": 2,
+    "suspicious_only_detections": 0,
+    "miss_rate": 0.6666666666666666
+  },
+  "latency_metrics": {
+    "to_suspicious": {
+      "count": 2,
+      "mean": 10.051912665367126,
+      "std": 8.320858120918274,
+      "min": 1.7310545444488525,
+      "max": 18.3727707862854,
+      "median": 10.051912665367126,
+      "p90": 16.708599162101745
+    },
+    "to_confirmed": {
+      "count": 2,
+      "mean": 12.70312774181366,
+      "std": 9.969099402427673,
+      "min": 2.7340283393859863,
+      "max": 22.672227144241333,
+      "median": 12.70312774181366,
+      "p90": 20.678407263755798
+    }
+  },
+  "recovery_metrics": {
+    "count": 6,
+    "mean": 3.4612141450246177,
+    "std": 4.03461653018075,
+    "min": 1.0629603862762451,
+    "max": 12.415500164031982
+  },
+  "baseline_metrics": {
+    "available": true,
+    "duration_s": 60,
+    "max_score_observed": 0,
+    "false_positive_samples": 0,
+    "false_positive_events": 0,
+    "false_positive_rate": 0.0
+  },
+  "confusion_matrix": {
+    "TP": 2,
+    "FN": 4,
+    "FP": 0,
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1_score": 0.5
+  },
+  "per_scenario": [
+    {
+      "name": "low_intensity",
+      "verr_x": 0.5,
+      "verr_y": 0.25,
+      "intensity": 0.5590169943749475,
+      "duration": 30,
+      "detected": false,
+      "latency_suspicious_s": null,
+      "latency_confirmed_s": null,
+      "recovery_s": 2.548373222351074,
+      "max_score": 0,
+      "num_events": 38
+    },
+    {
+      "name": "medium_intensity",
+      "verr_x": 1.5,
+      "verr_y": 0.75,
+      "intensity": 1.6770509831248424,
+      "duration": 30,
+      "detected": false,
+      "latency_suspicious_s": null,
+      "latency_confirmed_s": null,
+      "recovery_s": 1.8205897808074951,
+      "max_score": 0,
+      "num_events": 50
+    },
+    {
+      "name": "high_intensity",
+      "verr_x": 3.0,
+      "verr_y": 2.0,
+      "intensity": 3.605551275463989,
+      "duration": 30,
+      "detected": true,
+      "latency_suspicious_s": 18.3727707862854,
+      "latency_confirmed_s": 22.672227144241333,
+      "recovery_s": 1.1415550708770752,
+      "max_score": 0,
+      "num_events": 53
+    },
+    {
+      "name": "very_high_intensity",
+      "verr_x": 5.0,
+      "verr_y": 3.0,
+      "intensity": 5.830951894845301,
+      "duration": 20,
+      "detected": true,
+      "latency_suspicious_s": 1.7310545444488525,
+      "latency_confirmed_s": 2.7340283393859863,
+      "recovery_s": 12.415500164031982,
+      "max_score": 0,
+      "num_events": 57
+    },
+    {
+      "name": "single_axis",
+      "verr_x": 2.0,
+      "verr_y": 0.0,
+      "intensity": 2.0,
+      "duration": 30,
+      "detected": false,
+      "latency_suspicious_s": null,
+      "latency_confirmed_s": null,
+      "recovery_s": 1.778306245803833,
+      "max_score": 0,
+      "num_events": 50
+    },
+    {
+      "name": "brief_spoofing",
+      "verr_x": 2.0,
+      "verr_y": 1.0,
+      "intensity": 2.23606797749979,
+      "duration": 10,
+      "detected": false,
+      "latency_suspicious_s": null,
+      "latency_confirmed_s": null,
+      "recovery_s": 1.0629603862762451,
+      "max_score": 0,
+      "num_events": 36
+    }
+  ],
+  "score_statistics": {
+    "during_spoofing": {
+      "count": 0,
+      "label": "spoofing_active"
+    },
+    "during_clean": {
+      "count": 0,
+      "label": "no_spoofing"
+    }
+  }
+}

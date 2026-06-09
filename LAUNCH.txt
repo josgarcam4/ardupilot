@@ -1,0 +1,6 @@
+Documents/ardupilot/ArduCopter$ ../Tools/autotest/sim_vehicle.py --map --console
+
+param set SIM_GPS1_VERR_X 5.5
+param set SIM_GPS1_VERR_Y 5.5
+
+En ardupilot/libraries/AP_GpsSpoofDetect está el desarrollo de la librería propia para detectar el spoofing.
